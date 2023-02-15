@@ -71,7 +71,7 @@ trait ElasticquentTrait
      */
     public function getTypeName()
     {
-        return $this->getTable();
+        return '';
     }
 
     /**
@@ -370,7 +370,6 @@ trait ElasticquentTrait
     {
         $params = array(
             'index' => $this->getIndexName(),
-            'type' => $this->getTypeName(),
         );
 
         if ($getIdIfPossible && $this->getKey()) {
